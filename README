@@ -1,0 +1,23 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=278
+
+Follows is an adaption of sqlplus.vim written by Jamis Buck see http://vim.sourceforge.net/scripts/script.php?script_id=97
+for the original. 
+
+This script contains code required to execute SQL queries from withing VIM.  It uses sqsh (http://www.sqsh.org/) however it could trivially be adapted to use isql.  It is very ruff and ready but seems to offer required functionality.
+
+Thanks to Jamis Buck for creating sqlplus.vim I am sure if you compair the code you will see how little I have had to do to get this code to work ;-) 
+
+INSTRUCTIONS
+============
+
+Edit ~/.sqshrc and add the line \set semicolon_hack=1 
+
+Save the code into a file and source from your .vimrc or use your favourate autoload system.
+
+Edit the code to add the credentials for the databases you would like to connect to.
+
+In highlight mode hit F8 to execute the hightlighed SQL.  It will cope with broken lines.
+
+Hit F8 with no highlighted selection and VIM will prompt you for a database to connect to.
+
+
